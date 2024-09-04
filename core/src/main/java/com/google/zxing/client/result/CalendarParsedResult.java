@@ -45,7 +45,7 @@ public final class CalendarParsedResult extends ParsedResult {
       1000L, // 1 second
   };
 
-  private static final Pattern DATE_TIME = Pattern.compile("[0-9]{8}(T[0-9]{6}Z?)?");
+  private static final Pattern DATE_TIME = Pattern.compile("\\d{8}(T\\d{6}Z?)?");
 
   private final String summary;
   private final long start;
